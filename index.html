@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel = "stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  
+  <title>Tip calculator app</title>
+</head>
+<body>
+    <div class = "container">
+      <div class = "bill-details-container">
+          <div class = "form-container">
+            <div class = "labels">
+              <label>Bill</label>
+              <label class = "error-message" id = "error-message-bill"></label>
+            </div>
+            <div>
+                <img src = "images/icon-dollar.svg">
+                <input type = "text" placeholder="0" id = "bill" name="bill">
+            </div>
+          </div>
+          <div class = "labels">
+            <label>Select Tip %</label>
+          </div>
+          <div class = "select-tip-container">
+            <button id = "5-percentage">5%</button>
+            <button id = "10-percentage">10%</button>
+            <button id = "15-percentage">15%</button>
+            <button id = "25-percentage">25%</button>
+            <button id = "50-percentage">50%</button>
+            <button>Custom </button>
+          </div>
+            <div class ="form-container">
+              <div class = "labels">
+              <label>Number of People</label>
+              <label class = "error-message" id = "error-message-n-people"></label>
+            </div>
+              <div>
+                <img src = "images/icon-person.svg">
+                <input type = "text" placeholder="0" id = "number-of-people" name = "number-of-people">
+              </div>
+            </div>
+      </div>
+      <div class="bill-result-container">
+        <div class="result">
+            <div class="result-text">
+                <p class ="tip-amount">Tip Amount</span>
+                <span class = "slash-person">/ person</p>
+            </div>
+            <div class="result-amount" id = "tip-amount">$0.00</div>
+        </div>
+        <div class="result">
+            <div class="result-text">
+              <p>Total</span>
+              <span class = "slash-person">/ person</p>
+            </div>
+            <div class="result-amount" id = "result-amount">$0.00</div>
+        </div>
+        <button class="reset-button" id = "reset-button">RESET</button>
+    </div>
+</div>
+
+</body>
+<script src = "./script.js"></script>
+</html>

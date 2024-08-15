@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Space Mono',Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; 
+    background-color: hsl(185, 41%, 84%); 
+}
+.container{
+    display:flex;
+    flex-direction: row;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    max-width: 900px;
+    padding:50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius:30px;
+    gap:40px;
+    
+}
+.container label{
+    text-align: left;
+    display:block;
+    font-size:1.1rem;
+}
+.bill-details-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: left;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    color: hsl(184, 14%, 56%);
+    font-weight:700;
+    width: 100%;
+    text-wrap: nowrap;
+    label{
+        font-size: 1.2rem;
+        letter-spacing:-1px;
+    }
+}
+
+
+.form-container img{
+    position:absolute;
+    left:20px
+}
+.form-container input, .form-container div input {
+    padding: 10px;
+    border: 5px hsl(189, 41%, 97%);
+    border-radius: 10px;
+    font-size: 1.4rem;
+    background-color: hsl(189, 41%, 97%);
+    width: 100%;
+    text-align: right;
+    outline: none;
+    color: hsl(183, 100%, 15%);
+    font-size:700;
+}
+.form-container div input{
+    font-weight:700;
+    color:hsl(183, 100%, 15%);
+}
+
+.form-container div {
+    display: flex;
+    align-items: center;
+    position:relative;
+    gap: 10px;
+}
+
+.form-container img {
+    display: inline-block;
+    width: 15px; 
+}
+
+
+
+.select-tip-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px;
+}
+
+
+.select-tip-container label {
+    display: block;
+    font-size: 1.1rem; 
+    text-align: left;
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+    width: 100%;
+}
+
+.select-tip-container button {
+    padding: 8px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(183, 100%, 15%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.select-tip-container button:hover {
+    background-color: hsl(172, 67%, 45%);
+}
+
+.bill-result-container{
+    background-color: hsl(183, 100%, 15%);
+    height:100%;
+}
+
+
+.bill-result-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(185, 41%, 84%);
+    padding: 50px;
+    border-radius: 15px;
+    width: 50%;
+    min-height: 400px;
+}
+
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.result span{
+    font-size: 0.9rem;
+    display:block;
+    text-align: left;
+    color:gray;
+}
+.result-text p {
+    font-size: 1.5rem;
+    font-weight:700;
+}
+
+.result-amount {
+    font-size: 2rem;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+}
+
+.reset-button {
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: hsl(185, 41%, 84%);
+}
+
+
+
+#bill.error , #number-of-people.error
+{
+    border: 1px #ff0000 solid;
+}
+.error-message{
+    font-size : 1.1rem;
+    text-align: right;
+    color:#ff0000;
+}
+
+#bill.success , #number-of-people.success
+{
+    border: 1px #049e1e solid;
+}
+
