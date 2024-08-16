@@ -62,7 +62,17 @@ document.getElementById('25-percentage').addEventListener('click',function() {
 document.getElementById('50-percentage').addEventListener('click', function() {
     handlePercentage(50)
 });
-
+document.getElementById('custom-percentage').addEventListener('change',function(){
+    if(isNaN(this.value) || parseFloat(this.value) < 0 || parseFloat(this.value) > 100){
+        document.getElementById('error-message-perc').innerText = "Invalid Input";
+        setTimeout(function(){
+            document.getElementById('error-message-perc').innerText = "";
+        },5000);
+    }
+    else{
+        handlePercentage(parseFloat(this.value));
+    }
+});
 
 function calculatePercentage(percentage){
     return ((bill_amount * percentage) / 100);

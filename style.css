@@ -110,7 +110,7 @@ body{
     width: 100%;
 }
 
-.select-tip-container button {
+.select-tip-container button,input {
     padding: 8px 30px;
     border: none;
     border-radius: 5px;
@@ -120,6 +120,12 @@ body{
     font-size: 1.2rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+.select-tip-container input{
+    width:130px;
+    text-align: center;
+    background-color: hsl(189, 41%, 97%);
+    color:black;
 }
 
 .select-tip-container button:hover {
@@ -198,4 +204,6 @@ body{
 {
     border: 1px #049e1e solid;
 }
-
+#custom-percentage{
+    border:none;
+}
